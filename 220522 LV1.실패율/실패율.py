@@ -24,10 +24,10 @@ def solution(N, stages):
         stage_count -= count
 
     # 리스트로 변환됨
-    sort_dic = sorted(dic.items(), key=lambda x: x[1], reverse=True)
+    sort_list = sorted(dic.items(), key=lambda x: x[1], reverse=True)
 
-    for i in range(0, len(sort_dic)):
-        answer.append(sort_dic[i][0])
+    for i in range(0, len(sort_list)):
+        answer.append(sort_list[i][0])
 
     return answer
 
